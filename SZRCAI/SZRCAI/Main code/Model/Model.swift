@@ -31,8 +31,11 @@ protocol ModelDelegate: class {
         selectedPinsKVO = observe(\.selected, options: .new, changeHandler: { [self] model, change in
             guard let newValue = change.newValue else { return }
             if newValue != nil {
+                guard mainButton?.tag == Model.buttonTag.start.rawValue ||
+                        mainButton?.tag == Model.buttonTag.finish.rawValue else { return }
                 mainButton?.setTitle("OK", for: .normal)
             } else {
+                guard mainButton?.tag != Model.buttonTag.routecalc.rawValue else { return }
                 mainButton?.setTitle(mainButtonTitle, for: .normal)
             }
         })
