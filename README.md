@@ -1,4 +1,4 @@
-# [SZRCAI](https://szrcai.ru/) <img src="https://szrcai.ru/source/logo/logo.png" width="93" height="50" align="right">
+# [SZRCAI](https://szrcai.ru/) <img src="https://szrcai.ru/source/logo/logo.png" width="75" height="40" align="right">
 
 ### Задача
 
