@@ -14,6 +14,9 @@
 		3DD5F27625F853EB00923766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5F27425F853EB00923766 /* LaunchScreen.storyboard */; };
 		3DD5F28125F853EB00923766 /* SZRCAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F28025F853EB00923766 /* SZRCAITests.swift */; };
 		3DD5F28C25F853EB00923766 /* SZRCAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F28B25F853EB00923766 /* SZRCAIUITests.swift */; };
+		3DD5F2D425F856A100923766 /* UIResponder+defaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */; };
+		3DD5F2D525F856A100923766 /* UIResponder+defaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */; };
+		3DD5F2D625F856A100923766 /* UIResponder+defaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		3DD5F28725F853EB00923766 /* SZRCAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZRCAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD5F28B25F853EB00923766 /* SZRCAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZRCAIUITests.swift; sourceTree = "<group>"; };
 		3DD5F28D25F853EB00923766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+defaultViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				3DD5F2C625F8554300923766 /* Main code */,
-				3DD5F2BF25F8552E00923766 /* Storyboards */,
 				3DD5F2BA25F8550500923766 /* Root Files */,
 			);
 			path = SZRCAI;
@@ -125,6 +128,7 @@
 		3DD5F2BA25F8550500923766 /* Root Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5F2D225F8568A00923766 /* Extensions */,
 				3DD5F27725F853EB00923766 /* Info.plist */,
 				3DD5F26925F853E900923766 /* AppDelegate.swift */,
 				3DD5F26B25F853E900923766 /* SceneDelegate.swift */,
@@ -144,6 +148,8 @@
 		3DD5F2C625F8554300923766 /* Main code */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5F2D125F8567C00923766 /* New Group */,
+				3DD5F2BF25F8552E00923766 /* Storyboards */,
 				3DD5F2C725F8555500923766 /* Controllers */,
 			);
 			path = "Main code";
@@ -155,6 +161,21 @@
 				3DD5F26D25F853E900923766 /* ViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3DD5F2D125F8567C00923766 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3DD5F2D225F8568A00923766 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F26E25F853E900923766 /* ViewController.swift in Sources */,
+				3DD5F2D425F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 				3DD5F26A25F853E900923766 /* AppDelegate.swift in Sources */,
 				3DD5F26C25F853E900923766 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F28125F853EB00923766 /* SZRCAITests.swift in Sources */,
+				3DD5F2D525F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F28C25F853EB00923766 /* SZRCAIUITests.swift in Sources */,
+				3DD5F2D625F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

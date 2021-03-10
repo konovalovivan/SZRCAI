@@ -10,7 +10,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         switch UIApplication.shared.delegate as? AppDelegate {
         case nil:
             window = UIWindow(windowScene: windowScene)
-            
+            Self.defaultViewController(for: window)
         case let delegate:
             delegate?.window?.windowScene = windowScene
             self.window = delegate?.window
