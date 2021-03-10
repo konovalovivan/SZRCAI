@@ -28,6 +28,9 @@
 		3DD5F30625F8590700923766 /* PinMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F30325F8590700923766 /* PinMarkerView.swift */; };
 		3DD5F30D25F8596100923766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5F27225F853EB00923766 /* Assets.xcassets */; };
 		3DD5F31125F8596100923766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5F27225F853EB00923766 /* Assets.xcassets */; };
+		3DD5F32225F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */; };
+		3DD5F32325F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */; };
+		3DD5F32425F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,7 @@
 		3DD5F2EC25F8585D00923766 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3DD5F2F825F858B100923766 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3DD5F30325F8590700923766 /* PinMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMarkerView.swift; sourceTree = "<group>"; };
+		3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMarkerAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 		3DD5F2C625F8554300923766 /* Main code */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5F31E25F85A4E00923766 /* Helpers */,
 				3DD5F2F625F8589F00923766 /* Views */,
 				3DD5F2D125F8567C00923766 /* Model */,
 				3DD5F2BF25F8552E00923766 /* Storyboards */,
@@ -217,6 +222,22 @@
 				3DD5F30325F8590700923766 /* PinMarkerView.swift */,
 			);
 			path = PinMarkerView;
+			sourceTree = "<group>";
+		};
+		3DD5F31E25F85A4E00923766 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5F31F25F85A5B00923766 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DD5F31F25F85A5B00923766 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +378,7 @@
 				3DD5F2D425F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 				3DD5F26A25F853E900923766 /* AppDelegate.swift in Sources */,
 				3DD5F26C25F853E900923766 /* SceneDelegate.swift in Sources */,
+				3DD5F32225F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +389,7 @@
 				3DD5F30525F8590700923766 /* PinMarkerView.swift in Sources */,
 				3DD5F2EE25F8585D00923766 /* Model.swift in Sources */,
 				3DD5F2FA25F858B100923766 /* MapView.swift in Sources */,
+				3DD5F32325F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */,
 				3DD5F28125F853EB00923766 /* SZRCAITests.swift in Sources */,
 				3DD5F2D525F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 			);
@@ -379,6 +402,7 @@
 				3DD5F30625F8590700923766 /* PinMarkerView.swift in Sources */,
 				3DD5F2EF25F8585D00923766 /* Model.swift in Sources */,
 				3DD5F2FB25F858B100923766 /* MapView.swift in Sources */,
+				3DD5F32425F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */,
 				3DD5F28C25F853EB00923766 /* SZRCAIUITests.swift in Sources */,
 				3DD5F2D625F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 			);
@@ -533,6 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KXDT64LHVB;
 				INFOPLIST_FILE = "SZRCAI/Root Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -553,6 +578,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KXDT64LHVB;
 				INFOPLIST_FILE = "SZRCAI/Root Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
