@@ -3,7 +3,14 @@ import MapKit
 
 // Тестовое задание «СЗ РЦАИ» iOS Developer
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, ModelDelegate {
+    func deselectPin(pin: PinAnnotation) {
+        
+    }
+    
+    func modelButtonExecute(sender: UIButton) {
+        
+    }
     
     var mapView: MapView!
     
@@ -19,5 +26,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
         mapView = .init(frame: view.frame)
         mapView.delegate = self
         view.addSubview(mapView)
+
+        mapView.model.delegate = self
+        
+        buttonsSetup()
+        pinsKVOFunc()
     }
 }
