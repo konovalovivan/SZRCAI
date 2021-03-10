@@ -58,6 +58,24 @@
 		3DD5F37D25F85F0400923766 /* clearButtonSetup+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F37C25F85F0400923766 /* clearButtonSetup+Model.swift */; };
 		3DD5F37E25F85F0400923766 /* clearButtonSetup+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F37C25F85F0400923766 /* clearButtonSetup+Model.swift */; };
 		3DD5F37F25F85F0400923766 /* clearButtonSetup+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F37C25F85F0400923766 /* clearButtonSetup+Model.swift */; };
+		3DD5F38625F85FEE00923766 /* MKMapViewDelegate+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F38525F85FEE00923766 /* MKMapViewDelegate+ViewController.swift */; };
+		3DD5F38725F85FEE00923766 /* MKMapViewDelegate+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F38525F85FEE00923766 /* MKMapViewDelegate+ViewController.swift */; };
+		3DD5F38825F85FEE00923766 /* MKMapViewDelegate+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F38525F85FEE00923766 /* MKMapViewDelegate+ViewController.swift */; };
+		3DD5F39025F8601600923766 /* alertAuthorizedWhenInUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F38F25F8601600923766 /* alertAuthorizedWhenInUse.swift */; };
+		3DD5F39125F8601600923766 /* alertAuthorizedWhenInUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F38F25F8601600923766 /* alertAuthorizedWhenInUse.swift */; };
+		3DD5F39225F8601600923766 /* alertAuthorizedWhenInUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F38F25F8601600923766 /* alertAuthorizedWhenInUse.swift */; };
+		3DD5F39825F8603600923766 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F39725F8603600923766 /* LocationManager.swift */; };
+		3DD5F39925F8603600923766 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F39725F8603600923766 /* LocationManager.swift */; };
+		3DD5F39A25F8603600923766 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F39725F8603600923766 /* LocationManager.swift */; };
+		3DD5F3A325F8609300923766 /* ModelDelegate+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3A225F8609300923766 /* ModelDelegate+ViewController.swift */; };
+		3DD5F3A425F8609300923766 /* ModelDelegate+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3A225F8609300923766 /* ModelDelegate+ViewController.swift */; };
+		3DD5F3A525F8609300923766 /* ModelDelegate+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3A225F8609300923766 /* ModelDelegate+ViewController.swift */; };
+		3DD5F3AD25F860ED00923766 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3AC25F860ED00923766 /* CLLocationCoordinate2D.swift */; };
+		3DD5F3AE25F860ED00923766 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3AC25F860ED00923766 /* CLLocationCoordinate2D.swift */; };
+		3DD5F3AF25F860ED00923766 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3AC25F860ED00923766 /* CLLocationCoordinate2D.swift */; };
+		3DD5F3B425F8611600923766 /* MKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3B325F8611600923766 /* MKPolyline.swift */; };
+		3DD5F3B525F8611600923766 /* MKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3B325F8611600923766 /* MKPolyline.swift */; };
+		3DD5F3B625F8611600923766 /* MKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3B325F8611600923766 /* MKPolyline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +123,12 @@
 		3DD5F36E25F85E1E00923766 /* action+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "action+Model.swift"; sourceTree = "<group>"; };
 		3DD5F37525F85E5700923766 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		3DD5F37C25F85F0400923766 /* clearButtonSetup+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "clearButtonSetup+Model.swift"; sourceTree = "<group>"; };
+		3DD5F38525F85FEE00923766 /* MKMapViewDelegate+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapViewDelegate+ViewController.swift"; sourceTree = "<group>"; };
+		3DD5F38F25F8601600923766 /* alertAuthorizedWhenInUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertAuthorizedWhenInUse.swift; sourceTree = "<group>"; };
+		3DD5F39725F8603600923766 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3DD5F3A225F8609300923766 /* ModelDelegate+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelDelegate+ViewController.swift"; sourceTree = "<group>"; };
+		3DD5F3AC25F860ED00923766 /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		3DD5F3B325F8611600923766 /* MKPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPolyline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +246,7 @@
 		3DD5F2D125F8567C00923766 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5F39625F8603000923766 /* LocationManager */,
 				3DD5F35025F85D2800923766 /* Buttons */,
 				3DD5F32B25F85B1A00923766 /* PinAnnotation */,
 				3DD5F2EC25F8585D00923766 /* Model.swift */,
@@ -267,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				3DD5F31F25F85A5B00923766 /* Extensions */,
+				3DD5F38F25F8601600923766 /* alertAuthorizedWhenInUse.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -277,6 +303,8 @@
 				3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */,
 				3DD5F36725F85DFB00923766 /* UIEdgeInsets.swift */,
 				3DD5F37525F85E5700923766 /* UIButton.swift */,
+				3DD5F3AC25F860ED00923766 /* CLLocationCoordinate2D.swift */,
+				3DD5F3B325F8611600923766 /* MKPolyline.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				3DD5F26D25F853E900923766 /* ViewController.swift */,
+				3DD5F38325F85FDA00923766 /* Delegates */,
 				3DD5F34325F85C8900923766 /* Extensions */,
 			);
 			path = ViewController;
@@ -315,6 +344,23 @@
 				3DD5F37C25F85F0400923766 /* clearButtonSetup+Model.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3DD5F38325F85FDA00923766 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5F38525F85FEE00923766 /* MKMapViewDelegate+ViewController.swift */,
+				3DD5F3A225F8609300923766 /* ModelDelegate+ViewController.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3DD5F39625F8603000923766 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5F39725F8603600923766 /* LocationManager.swift */,
+			);
+			path = LocationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,15 +495,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F30425F8590700923766 /* PinMarkerView.swift in Sources */,
+				3DD5F38625F85FEE00923766 /* MKMapViewDelegate+ViewController.swift in Sources */,
 				3DD5F2ED25F8585D00923766 /* Model.swift in Sources */,
+				3DD5F3AD25F860ED00923766 /* CLLocationCoordinate2D.swift in Sources */,
 				3DD5F2F925F858B100923766 /* MapView.swift in Sources */,
 				3DD5F37625F85E5700923766 /* UIButton.swift in Sources */,
+				3DD5F39025F8601600923766 /* alertAuthorizedWhenInUse.swift in Sources */,
 				3DD5F33725F85B3F00923766 /* DashLine.swift in Sources */,
 				3DD5F35E25F85DE100923766 /* buttons+Model.swift in Sources */,
 				3DD5F26E25F853E900923766 /* ViewController.swift in Sources */,
 				3DD5F2D425F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
+				3DD5F3B425F8611600923766 /* MKPolyline.swift in Sources */,
 				3DD5F26A25F853E900923766 /* AppDelegate.swift in Sources */,
 				3DD5F36F25F85E1E00923766 /* action+Model.swift in Sources */,
+				3DD5F3A325F8609300923766 /* ModelDelegate+ViewController.swift in Sources */,
+				3DD5F39825F8603600923766 /* LocationManager.swift in Sources */,
 				3DD5F36825F85DFB00923766 /* UIEdgeInsets.swift in Sources */,
 				3DD5F26C25F853E900923766 /* SceneDelegate.swift in Sources */,
 				3DD5F35325F85D3B00923766 /* trackerButton+Model.swift in Sources */,
@@ -473,17 +525,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F30525F8590700923766 /* PinMarkerView.swift in Sources */,
+				3DD5F39125F8601600923766 /* alertAuthorizedWhenInUse.swift in Sources */,
 				3DD5F33825F85B3F00923766 /* DashLine.swift in Sources */,
 				3DD5F36925F85DFB00923766 /* UIEdgeInsets.swift in Sources */,
 				3DD5F37025F85E1E00923766 /* action+Model.swift in Sources */,
 				3DD5F2EE25F8585D00923766 /* Model.swift in Sources */,
 				3DD5F2FA25F858B100923766 /* MapView.swift in Sources */,
 				3DD5F32325F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */,
+				3DD5F39925F8603600923766 /* LocationManager.swift in Sources */,
+				3DD5F38725F85FEE00923766 /* MKMapViewDelegate+ViewController.swift in Sources */,
 				3DD5F28125F853EB00923766 /* SZRCAITests.swift in Sources */,
 				3DD5F35F25F85DE100923766 /* buttons+Model.swift in Sources */,
 				3DD5F37E25F85F0400923766 /* clearButtonSetup+Model.swift in Sources */,
+				3DD5F3AE25F860ED00923766 /* CLLocationCoordinate2D.swift in Sources */,
 				3DD5F35425F85D3B00923766 /* trackerButton+Model.swift in Sources */,
+				3DD5F3A425F8609300923766 /* ModelDelegate+ViewController.swift in Sources */,
 				3DD5F2D525F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
+				3DD5F3B525F8611600923766 /* MKPolyline.swift in Sources */,
 				3DD5F37725F85E5700923766 /* UIButton.swift in Sources */,
 				3DD5F34725F85CAB00923766 /* buttonsSetup+ViewController.swift in Sources */,
 				3DD5F32E25F85B2000923766 /* PinAnnotation.swift in Sources */,
@@ -495,17 +553,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F30625F8590700923766 /* PinMarkerView.swift in Sources */,
+				3DD5F39225F8601600923766 /* alertAuthorizedWhenInUse.swift in Sources */,
 				3DD5F33925F85B3F00923766 /* DashLine.swift in Sources */,
 				3DD5F36A25F85DFB00923766 /* UIEdgeInsets.swift in Sources */,
 				3DD5F37125F85E1E00923766 /* action+Model.swift in Sources */,
 				3DD5F2EF25F8585D00923766 /* Model.swift in Sources */,
 				3DD5F2FB25F858B100923766 /* MapView.swift in Sources */,
 				3DD5F32425F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */,
+				3DD5F39A25F8603600923766 /* LocationManager.swift in Sources */,
+				3DD5F38825F85FEE00923766 /* MKMapViewDelegate+ViewController.swift in Sources */,
 				3DD5F28C25F853EB00923766 /* SZRCAIUITests.swift in Sources */,
 				3DD5F36025F85DE100923766 /* buttons+Model.swift in Sources */,
 				3DD5F37F25F85F0400923766 /* clearButtonSetup+Model.swift in Sources */,
+				3DD5F3AF25F860ED00923766 /* CLLocationCoordinate2D.swift in Sources */,
 				3DD5F35525F85D3B00923766 /* trackerButton+Model.swift in Sources */,
+				3DD5F3A525F8609300923766 /* ModelDelegate+ViewController.swift in Sources */,
 				3DD5F2D625F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
+				3DD5F3B625F8611600923766 /* MKPolyline.swift in Sources */,
 				3DD5F37825F85E5700923766 /* UIButton.swift in Sources */,
 				3DD5F34825F85CAB00923766 /* buttonsSetup+ViewController.swift in Sources */,
 				3DD5F32F25F85B2000923766 /* PinAnnotation.swift in Sources */,
