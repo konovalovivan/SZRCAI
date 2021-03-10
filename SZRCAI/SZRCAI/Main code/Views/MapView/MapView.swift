@@ -20,7 +20,7 @@ class MapView: MKMapView {
         showsScale = true
         isZoomEnabled = true
         isScrollEnabled = true
-                
+        
         register(PinMarkerView.self, forAnnotationViewWithReuseIdentifier: PinMarkerView.reuseId)
     }
     

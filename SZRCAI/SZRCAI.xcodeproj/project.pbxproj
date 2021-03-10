@@ -31,6 +31,12 @@
 		3DD5F32225F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */; };
 		3DD5F32325F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */; };
 		3DD5F32425F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */; };
+		3DD5F32D25F85B2000923766 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F32C25F85B2000923766 /* PinAnnotation.swift */; };
+		3DD5F32E25F85B2000923766 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F32C25F85B2000923766 /* PinAnnotation.swift */; };
+		3DD5F32F25F85B2000923766 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F32C25F85B2000923766 /* PinAnnotation.swift */; };
+		3DD5F33725F85B3F00923766 /* DashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F33625F85B3F00923766 /* DashLine.swift */; };
+		3DD5F33825F85B3F00923766 /* DashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F33625F85B3F00923766 /* DashLine.swift */; };
+		3DD5F33925F85B3F00923766 /* DashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F33625F85B3F00923766 /* DashLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +75,8 @@
 		3DD5F2F825F858B100923766 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3DD5F30325F8590700923766 /* PinMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMarkerView.swift; sourceTree = "<group>"; };
 		3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMarkerAnnotationView.swift; sourceTree = "<group>"; };
+		3DD5F32C25F85B2000923766 /* PinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
+		3DD5F33625F85B3F00923766 /* DashLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +194,9 @@
 		3DD5F2D125F8567C00923766 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5F32B25F85B1A00923766 /* PinAnnotation */,
 				3DD5F2EC25F8585D00923766 /* Model.swift */,
+				3DD5F33625F85B3F00923766 /* DashLine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,6 +248,14 @@
 				3DD5F32125F85A7100923766 /* MKMarkerAnnotationView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3DD5F32B25F85B1A00923766 /* PinAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5F32C25F85B2000923766 /* PinAnnotation.swift */,
+			);
+			path = PinAnnotation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,10 +392,12 @@
 				3DD5F30425F8590700923766 /* PinMarkerView.swift in Sources */,
 				3DD5F2ED25F8585D00923766 /* Model.swift in Sources */,
 				3DD5F2F925F858B100923766 /* MapView.swift in Sources */,
+				3DD5F33725F85B3F00923766 /* DashLine.swift in Sources */,
 				3DD5F26E25F853E900923766 /* ViewController.swift in Sources */,
 				3DD5F2D425F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 				3DD5F26A25F853E900923766 /* AppDelegate.swift in Sources */,
 				3DD5F26C25F853E900923766 /* SceneDelegate.swift in Sources */,
+				3DD5F32D25F85B2000923766 /* PinAnnotation.swift in Sources */,
 				3DD5F32225F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,11 +407,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F30525F8590700923766 /* PinMarkerView.swift in Sources */,
+				3DD5F33825F85B3F00923766 /* DashLine.swift in Sources */,
 				3DD5F2EE25F8585D00923766 /* Model.swift in Sources */,
 				3DD5F2FA25F858B100923766 /* MapView.swift in Sources */,
 				3DD5F32325F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */,
 				3DD5F28125F853EB00923766 /* SZRCAITests.swift in Sources */,
 				3DD5F2D525F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
+				3DD5F32E25F85B2000923766 /* PinAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +422,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F30625F8590700923766 /* PinMarkerView.swift in Sources */,
+				3DD5F33925F85B3F00923766 /* DashLine.swift in Sources */,
 				3DD5F2EF25F8585D00923766 /* Model.swift in Sources */,
 				3DD5F2FB25F858B100923766 /* MapView.swift in Sources */,
 				3DD5F32425F85A7100923766 /* MKMarkerAnnotationView.swift in Sources */,
 				3DD5F28C25F853EB00923766 /* SZRCAIUITests.swift in Sources */,
 				3DD5F2D625F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
+				3DD5F32F25F85B2000923766 /* PinAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
