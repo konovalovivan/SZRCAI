@@ -78,6 +78,8 @@
 		3DD5F3B625F8611600923766 /* MKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3B325F8611600923766 /* MKPolyline.swift */; };
 		3DD5F3C925F8652A00923766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5F27425F853EB00923766 /* LaunchScreen.storyboard */; };
 		3DD5F3CD25F8652B00923766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5F27425F853EB00923766 /* LaunchScreen.storyboard */; };
+		3DD5F3E025F86B6900923766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F26D25F853E900923766 /* ViewController.swift */; };
+		3DD5F3E425F86B6900923766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F26D25F853E900923766 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -532,6 +534,7 @@
 				3DD5F39125F8601600923766 /* alertAuthorizedWhenInUse.swift in Sources */,
 				3DD5F33825F85B3F00923766 /* DashLine.swift in Sources */,
 				3DD5F36925F85DFB00923766 /* UIEdgeInsets.swift in Sources */,
+				3DD5F3E025F86B6900923766 /* ViewController.swift in Sources */,
 				3DD5F37025F85E1E00923766 /* action+Model.swift in Sources */,
 				3DD5F2EE25F8585D00923766 /* Model.swift in Sources */,
 				3DD5F2FA25F858B100923766 /* MapView.swift in Sources */,
@@ -560,6 +563,7 @@
 				3DD5F39225F8601600923766 /* alertAuthorizedWhenInUse.swift in Sources */,
 				3DD5F33925F85B3F00923766 /* DashLine.swift in Sources */,
 				3DD5F36A25F85DFB00923766 /* UIEdgeInsets.swift in Sources */,
+				3DD5F3E425F86B6900923766 /* ViewController.swift in Sources */,
 				3DD5F37125F85E1E00923766 /* action+Model.swift in Sources */,
 				3DD5F2EF25F8585D00923766 /* Model.swift in Sources */,
 				3DD5F2FB25F858B100923766 /* MapView.swift in Sources */,

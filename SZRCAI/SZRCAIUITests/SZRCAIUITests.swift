@@ -12,6 +12,15 @@ class SZRCAIUITests: XCTestCase {
     func testExample() throws {
         let app = XCUIApplication()
         app.launch()
+        
+        let arcticOceanMap = app.maps.containing(.other, identifier:"Arctic Ocean").element
+        arcticOceanMap.tap()
+        arcticOceanMap.tap()
+        app.maps.containing(.other, identifier:"Russia").element.swipeRight()
+        
+        let russiaMap = app.maps.containing(.other, identifier:"Russia").element
+        russiaMap.swipeRight()
+        russiaMap.swipeRight()
     }
     
     func testLaunchPerformance() throws {
