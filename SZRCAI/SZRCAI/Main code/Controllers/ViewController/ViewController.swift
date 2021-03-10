@@ -4,7 +4,7 @@ import MapKit
 // Тестовое задание «СЗ РЦАИ» iOS Developer
 
 class ViewController: UIViewController {
-
+    
     var mapView: MapView!
     
     /// Button for building graphs and routes
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         mapView = .init(frame: view.frame)
         mapView.delegate = self
         view.addSubview(mapView)
-
+        
         mapView.model.delegate = self
         
         buttonsSetup()
