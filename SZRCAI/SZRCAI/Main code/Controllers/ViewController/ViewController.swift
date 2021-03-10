@@ -3,15 +3,8 @@ import MapKit
 
 // Тестовое задание «СЗ РЦАИ» iOS Developer
 
-class ViewController: UIViewController, MKMapViewDelegate, ModelDelegate {
-    func deselectPin(pin: PinAnnotation) {
-        
-    }
-    
-    func modelButtonExecute(sender: UIButton) {
-        
-    }
-    
+class ViewController: UIViewController {
+
     var mapView: MapView!
     
     /// Button for building graphs and routes
