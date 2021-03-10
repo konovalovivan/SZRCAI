@@ -17,6 +17,12 @@
 		3DD5F2D425F856A100923766 /* UIResponder+defaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */; };
 		3DD5F2D525F856A100923766 /* UIResponder+defaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */; };
 		3DD5F2D625F856A100923766 /* UIResponder+defaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */; };
+		3DD5F2ED25F8585D00923766 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2EC25F8585D00923766 /* Model.swift */; };
+		3DD5F2EE25F8585D00923766 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2EC25F8585D00923766 /* Model.swift */; };
+		3DD5F2EF25F8585D00923766 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2EC25F8585D00923766 /* Model.swift */; };
+		3DD5F2F925F858B100923766 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2F825F858B100923766 /* MapView.swift */; };
+		3DD5F2FA25F858B100923766 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2F825F858B100923766 /* MapView.swift */; };
+		3DD5F2FB25F858B100923766 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F2F825F858B100923766 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,8 @@
 		3DD5F28B25F853EB00923766 /* SZRCAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZRCAIUITests.swift; sourceTree = "<group>"; };
 		3DD5F28D25F853EB00923766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+defaultViewController.swift"; sourceTree = "<group>"; };
+		3DD5F2EC25F8585D00923766 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3DD5F2F825F858B100923766 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +156,8 @@
 		3DD5F2C625F8554300923766 /* Main code */ = {
 			isa = PBXGroup;
 			children = (
-				3DD5F2D125F8567C00923766 /* New Group */,
+				3DD5F2F625F8589F00923766 /* Views */,
+				3DD5F2D125F8567C00923766 /* Model */,
 				3DD5F2BF25F8552E00923766 /* Storyboards */,
 				3DD5F2C725F8555500923766 /* Controllers */,
 			);
@@ -163,11 +172,12 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		3DD5F2D125F8567C00923766 /* New Group */ = {
+		3DD5F2D125F8567C00923766 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5F2EC25F8585D00923766 /* Model.swift */,
 			);
-			path = "New Group";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3DD5F2D225F8568A00923766 /* Extensions */ = {
@@ -176,6 +186,22 @@
 				3DD5F2D325F856A100923766 /* UIResponder+defaultViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3DD5F2F625F8589F00923766 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5F2F725F858A500923766 /* MapView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DD5F2F725F858A500923766 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5F2F825F858B100923766 /* MapView.swift */,
+			);
+			path = MapView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD5F2ED25F8585D00923766 /* Model.swift in Sources */,
+				3DD5F2F925F858B100923766 /* MapView.swift in Sources */,
 				3DD5F26E25F853E900923766 /* ViewController.swift in Sources */,
 				3DD5F2D425F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 				3DD5F26A25F853E900923766 /* AppDelegate.swift in Sources */,
@@ -318,6 +346,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD5F2EE25F8585D00923766 /* Model.swift in Sources */,
+				3DD5F2FA25F858B100923766 /* MapView.swift in Sources */,
 				3DD5F28125F853EB00923766 /* SZRCAITests.swift in Sources */,
 				3DD5F2D525F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 			);
@@ -327,6 +357,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD5F2EF25F8585D00923766 /* Model.swift in Sources */,
+				3DD5F2FB25F858B100923766 /* MapView.swift in Sources */,
 				3DD5F28C25F853EB00923766 /* SZRCAIUITests.swift in Sources */,
 				3DD5F2D625F856A100923766 /* UIResponder+defaultViewController.swift in Sources */,
 			);
