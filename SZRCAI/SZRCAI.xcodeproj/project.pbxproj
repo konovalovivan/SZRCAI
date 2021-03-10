@@ -76,6 +76,8 @@
 		3DD5F3B425F8611600923766 /* MKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3B325F8611600923766 /* MKPolyline.swift */; };
 		3DD5F3B525F8611600923766 /* MKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3B325F8611600923766 /* MKPolyline.swift */; };
 		3DD5F3B625F8611600923766 /* MKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5F3B325F8611600923766 /* MKPolyline.swift */; };
+		3DD5F3C925F8652A00923766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5F27425F853EB00923766 /* LaunchScreen.storyboard */; };
+		3DD5F3CD25F8652B00923766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5F27425F853EB00923766 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,11 +228,11 @@
 		3DD5F2C625F8554300923766 /* Main code */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5F2C725F8555500923766 /* Controllers */,
 				3DD5F31E25F85A4E00923766 /* Helpers */,
-				3DD5F2F625F8589F00923766 /* Views */,
 				3DD5F2D125F8567C00923766 /* Model */,
 				3DD5F2BF25F8552E00923766 /* Storyboards */,
-				3DD5F2C725F8555500923766 /* Controllers */,
+				3DD5F2F625F8589F00923766 /* Views */,
 			);
 			path = "Main code";
 			sourceTree = "<group>";
@@ -246,11 +248,11 @@
 		3DD5F2D125F8567C00923766 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3DD5F39625F8603000923766 /* LocationManager */,
-				3DD5F35025F85D2800923766 /* Buttons */,
-				3DD5F32B25F85B1A00923766 /* PinAnnotation */,
-				3DD5F2EC25F8585D00923766 /* Model.swift */,
 				3DD5F33625F85B3F00923766 /* DashLine.swift */,
+				3DD5F2EC25F8585D00923766 /* Model.swift */,
+				3DD5F35025F85D2800923766 /* Buttons */,
+				3DD5F39625F8603000923766 /* LocationManager */,
+				3DD5F32B25F85B1A00923766 /* PinAnnotation */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,10 +340,10 @@
 		3DD5F35025F85D2800923766 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				3DD5F35225F85D3B00923766 /* trackerButton+Model.swift */,
-				3DD5F35D25F85DE100923766 /* buttons+Model.swift */,
 				3DD5F36E25F85E1E00923766 /* action+Model.swift */,
+				3DD5F35D25F85DE100923766 /* buttons+Model.swift */,
 				3DD5F37C25F85F0400923766 /* clearButtonSetup+Model.swift */,
+				3DD5F35225F85D3B00923766 /* trackerButton+Model.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -476,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F30D25F8596100923766 /* Assets.xcassets in Resources */,
+				3DD5F3C925F8652A00923766 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD5F31125F8596100923766 /* Assets.xcassets in Resources */,
+				3DD5F3CD25F8652B00923766 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,7 +729,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = KXDT64LHVB;
 				INFOPLIST_FILE = "SZRCAI/Root Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -746,7 +750,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = KXDT64LHVB;
 				INFOPLIST_FILE = "SZRCAI/Root Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
