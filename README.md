@@ -1,5 +1,9 @@
 # [SZRCAI](https://szrcai.ru/) <img src="https://szrcai.ru/source/logo/logo.png" width="75" height="40" align="right">
 
+|   Demo of work  | Large distance | Error |
+|     :---:       |     :---:      |     :---:     |
+| ![](https://media.giphy.com/media/rCVfCsn0WfotuB7PWA/giphy.gif) | ![](https://media.giphy.com/media/s5U47A0myx9Z3PJxEC/giphy.gif) | ![](https://media.giphy.com/media/67LTjap7OHrpvG9INw/giphy.gif) |
+
 ### Задача
 
 Реализовать приложение для построения кратчайшего маршрута через заданные географические точки. 
