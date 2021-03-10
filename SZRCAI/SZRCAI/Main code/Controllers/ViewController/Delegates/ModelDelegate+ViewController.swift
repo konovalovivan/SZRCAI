@@ -1,14 +1,102 @@
-import Foundation
 import UIKit
+import MapKit
 import CoreLocation
 
 extension ViewController: ModelDelegate {
-    func deselectPin(pin: PinAnnotation) {
-        
+    
+    func deselectPin(pin annotation: PinAnnotation) {
+        mapView.deselectAnnotation(annotation, animated: true)
+        guard let view = mapView.view(for: annotation) else { return }
+        if let marker = view as? MKMarkerAnnotationView  {
+            marker.markerTintColor = annotation.markerColor
+        }
     }
     
     func modelButtonExecute(sender: UIButton) {
-        
+        let selected = mapView.model.selected
+        switch sender.tag {
+        case Model.buttonTag.graphs.rawValue:
+            #if DEBUG
+            print("Trying to build graphs...")
+            #endif
+            constructGraphs()
+        case Model.buttonTag.start.rawValue:
+            guard selected != nil else { return }
+            #if DEBUG
+            print("User has chosen a starting point!")
+            #endif
+        case Model.buttonTag.finish.rawValue:
+            guard selected != nil else { return }
+            #if DEBUG
+            print("User selected endpoint!")
+            #endif
+        case Model.buttonTag.routecalc.rawValue:
+            #if DEBUG
+            print("Trying to make the shortest route!")
+            #endif
+            let coords = mapView.model.route.compactMap({ $0.coordinate })
+            
+            for (i,coord) in coords.enumerated() {
+                if (i + 1) < coords.count {
+                    createRouteTo(from: coord, to: coords[i+1])
+                }
+            }
+            mainButton?.removeTarget(nil, action: nil, for: .allEvents)
+        case Model.buttonTag.clear.rawValue:
+            clearingMap()
+            print("❌ Clearing the map...")
+        default: fatalError()
+        }
+    }
+    
+    func createRouteTo(from: CLLocationCoordinate2D, to: CLLocationCoordinate2D) {
+        if CLLocationCoordinate2DIsValid(from) && CLLocationCoordinate2DIsValid(to) {
+            let directionRequest = MKDirections.Request()
+            directionRequest.source = .init(placemark: .init(coordinate: from))
+            directionRequest.destination = .init(placemark: .init(coordinate: to))
+            directionRequest.requestsAlternateRoutes = false
+            directionRequest.transportType = .any
+            
+            let directions = MKDirections(request: directionRequest)
+            
+            directions.calculate { [self] (response, error) in
+                guard let response = response else {
+                    if let error = error {
+                        // MARK: Error message while building a route
+                        let alert = UIAlertController(title: "FAILED TO CREATE A ROUTE",
+                                                      message: error.localizedDescription, preferredStyle: .alert)
+                        alert.addAction(.init(title: "Remove annotations", style: .destructive, handler: {_ in clearingMap() }))
+                        present(alert, animated: true)
+                    }
+                    return
+                }
+                enum TransportType: UInt {
+                    case automobile = 1, walking, transit
+                    var value: String {
+                        switch self {
+                        case .automobile: return "car"
+                        case .walking: return "walk"
+                        case .transit: return "transit"
+                        }
+                    }
+                }
+                guard let route = response.routes.first else { return }
+                mapView.addOverlay(route.polyline)
+                let transport = (TransportType(rawValue: route.transportType.rawValue)?.value ?? "")
+                mapView.model.mainButton?.setTitle("\(Int((route.expectedTravelTime)/60)) min / \(transport)", for: .normal)
+            }
+        }
+    }
+    
+    // Clearing the entire map of annotations and overlays (including graphs)
+    fileprivate func clearingMap() {
+        DispatchQueue.main.async { [mapView] () -> Void in
+            mapView?.model.pins.removeAll()
+            mapView?.model.route.removeAll()
+            mapView?.model.graphsBuilt = false
+            mapView?.overlays.forEach({ mapView?.removeOverlay($0) })
+            mapView?.annotations.forEach({ mapView?.removeAnnotation($0) })
+        }
     }
     
     internal func constructGraphs() {
@@ -25,7 +113,6 @@ extension ViewController: ModelDelegate {
                 
                 // MARK: вершины соединены ребрами при условии, что расстояние между вершинами не более 5км
                 // condition: vertices are connected by edges, provided that the distance between the vertices is no more than 5 km
-                print("distance", locations.distance)
                 if locations.distance < 5000 {
                     let dashline = DashLine(locations: locations)
                     
