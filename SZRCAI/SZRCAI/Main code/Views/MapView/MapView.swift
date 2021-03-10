@@ -4,6 +4,18 @@ import MapKit
 class MapView: MKMapView {
     
     var model: Model = .shared
+    weak var lm: LocationManager? = .shared
+    
+    @objc fileprivate func appendPin(_ sender: UILongPressGestureRecognizer) {
+        guard model.graphsBuilt == false else { return }
+        if sender.state != .began { return }
+        
+        let point = sender.location(in: self)
+        let coord = convert(point, toCoordinateFrom: self)
+        
+        let annotation = PinAnnotation(t: "PIN", sub: nil, c: coord)
+        self.addAnnotation(annotation)
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,6 +32,11 @@ class MapView: MKMapView {
         showsScale = true
         isZoomEnabled = true
         isScrollEnabled = true
+        
+        let longPress = UILongPressGestureRecognizer()
+        longPress.minimumPressDuration = 0.25 // in seconds
+        longPress.addTarget(self, action: #selector(appendPin(_:)))
+        addGestureRecognizer(longPress)
         
         register(PinMarkerView.self, forAnnotationViewWithReuseIdentifier: PinMarkerView.reuseId)
     }
