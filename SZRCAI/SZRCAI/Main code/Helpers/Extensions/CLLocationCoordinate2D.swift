@@ -1,7 +1,7 @@
 import Foundation
 import CoreLocation
 
-extension CLLocationCoordinate2D: Equatable {
+extension CLLocationCoordinate2D {
     
     public var location: CLLocation {
         return CLLocation(latitude: latitude, longitude: longitude)
