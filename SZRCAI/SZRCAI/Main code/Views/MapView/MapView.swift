@@ -7,6 +7,21 @@ class MapView: MKMapView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        mapType = .standard
+        
+        showsUserLocation = true
+        userTrackingMode = .none
+        
+        showsPointsOfInterest = true
+        
+        showsCompass = true
+        showsScale = true
+        isZoomEnabled = true
+        isScrollEnabled = true
+                
+        register(PinMarkerView.self, forAnnotationViewWithReuseIdentifier: PinMarkerView.reuseId)
     }
     
     required init?(coder: NSCoder) {
